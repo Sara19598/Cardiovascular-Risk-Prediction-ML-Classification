@@ -87,15 +87,14 @@ F1 score: a composite harmonic mean (average of reciprocals) that combines both 
 
 # CONCLUSION
 ------------------------------------------------------
-Patients of age group 32 to 70 years are present among which 38 to 46 years age group have high smoking habits.
-➢ Comparative to male patients’ female patients is more. 
-➢ Across the dataset we have 1307 male patients, of which 809 male patients smoke cigarettes. 
-➢ We have 1620 female patients out of which 638 smoke cigarettes. 
-➢ patients who previously had a stroke and Number of patients with medical history like blood pressure medication, Diabetes is very low. 
-➢ Logistic Regression-Nearest Neighbors, Support Vector Machine & Decision Tree Classifier models were implemented.
-➢ From above these models, we found that KNN is the best fitted model compared to other models
-➢ In Hyperparameter tuning, we observed that K-Nearest Neighbors accuracy has improved which shows that KNN (with Hyperparameter Tuning) is the best fitted model for coronary heart disease dataset. Train Accuracy = 85.30 & Test Accuracy = 84.07
-
-For future improvement in the model fitting for coronary heart disease, we can perform the Random Forest Classifier, XGBoost models also. Consulting medical people we can analyze the feature in proper and required manner to approach the disease cause and effects.
+1. Patients of age group 32 to 70 years are present among which 38 to 46 years age group have high smoking habits.
+2. Comparative to male patients’ female patients is more. 
+3. Across the dataset we have 1307 male patients, of which 809 male patients smoke cigarettes. 
+4. We have 1620 female patients out of which 638 smoke cigarettes. 
+5. Patients who previously had a stroke and Number of patients with medical history like blood pressure medication, Diabetes is very low. 
+6. Logistic Regression-Nearest Neighbors, Support Vector Machine & Decision Tree Classifier models were implemented.
+7. From above these models, we found that KNN is the best fitted model compared to other models
+8. In Hyperparameter tuning, we observed that K-Nearest Neighbors accuracy has improved which shows that KNN (with Hyperparameter Tuning) is the best fitted model for coronary heart disease dataset. Train Accuracy = 85.30 & Test Accuracy = 84.07
+9. For future improvement in the model fitting for coronary heart disease, we can perform the Random Forest Classifier, XGBoost models also. Consulting medical people we can analyze the feature in proper and required manner to approach the disease cause and effects.
 
 ## Thank You !!...
