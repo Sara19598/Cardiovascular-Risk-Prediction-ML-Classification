@@ -1,4 +1,5 @@
 # Cardiovascular-Risk-Prediction-ML-Classification
+![heart-disease](https://user-images.githubusercontent.com/95495685/185740128-877d78cb-4a72-4328-af11-03a34ef4ab02.png)
 
 # INTRODUCTION
 ----------------------------------------------------
@@ -35,19 +36,26 @@ We checked the Outliers and correlation matrix to overcome the noise in the data
 
 # DATA INSIGHTS
 ----------------------------------------------------------------
-Describe
-image
+## Describe
+![184524084-d2a81100-b05e-4b38-b95f-bb6a0daee08d](https://user-images.githubusercontent.com/95495685/185740161-561042de-0b85-425b-8055-89b91e83a7ca.png)
+
 
 ## Visualize the presence of NAN values-
-image NAN values are removed by replacing it with unknown values with missing no matrix. The above figure shows that presence of NAN values will not reflect in the dataset.
+![184524094-78cd3d2b-4c33-47d3-8cc9-6a0f2246f205](https://user-images.githubusercontent.com/95495685/185740187-2ac88ecd-71d8-418a-8091-db83ba3e2ec3.png)
+
+NAN values are removed by replacing it with unknown values with missing no matrix. The above figure shows that presence of NAN values will not reflect in the dataset.
 
 # OUTLIERS DETECTION
 ---------------------------------------------------------------
-An outlier is a data point that is noticeably different from the rest. They represent errors in measurement, bad data collection, or simply show variables not considered when collecting the data. image
+An outlier is a data point that is noticeably different from the rest. They represent errors in measurement, bad data collection, or simply show variables not considered when collecting the data. 
+
+![184524111-8afc3ddf-8cf4-43c9-8d8f-8c7e0600e1a1](https://user-images.githubusercontent.com/95495685/185740208-529d863c-dc74-404d-b18d-7fe17b8e4c2e.png)
 
 # CORRELATION MATRIX (HEATMAP)
 -------------------------------------------------------------
-image Heart Rate and prevalent Stroke are the lowest correlated with the target variable. Also, some of the features have a negative correlation with the target value and some have positive.
+![184524122-c5f18275-427e-4972-8a51-cec46e200b27](https://user-images.githubusercontent.com/95495685/185740225-7ff3e054-1eed-45a0-9715-2ae073e829b7.png)
+
+Heart Rate and prevalent Stroke are the lowest correlated with the target variable. Also, some of the features have a negative correlation with the target value and some have positive.
 
 # DATA MODELING
 ------------------------------------------------------------
@@ -60,28 +68,36 @@ The train_test_split was imported from the sklearn.model_selection. The data is 
 # MODEL IMPLEMENTATION
 ------------------------------------------------------------
 ## ➔ Support Vector Machine
-Support Vector Machine (SVM) is a classification technique used for the classification of linear as well as non-linear data. SVM is the margin based classifier. It selects the maximum margin. This model is further used to perform classification of testing data. image
+Support Vector Machine (SVM) is a classification technique used for the classification of linear as well as non-linear data. SVM is the margin based classifier. It selects the maximum margin. This model is further used to perform classification of testing data. 
+
+![184524174-40061f85-7e22-428b-b74c-da9c2322e2c0](https://user-images.githubusercontent.com/95495685/185740245-bb4ba47d-4b06-4139-82ba-df3f038a3b94.png)
 
 ## ➔ Decision Tree Classifier
-Decision tree build classification or regression models in the form of a tree structure. It breaks down a dataset into smaller and smaller subsets while at the same time an associated decision tree is incrementally developed. The final result is a tree with decision nodes and leaf nodes. image
+Decision tree build classification or regression models in the form of a tree structure. It breaks down a dataset into smaller and smaller subsets while at the same time an associated decision tree is incrementally developed. The final result is a tree with decision nodes and leaf nodes.
+![184524188-c84a9c0f-2e0c-4ff7-bab9-dca44d616f55](https://user-images.githubusercontent.com/95495685/185740257-c48a5e15-e73b-4ba1-ac18-0d1f41ac0668.png)
+
 
 # Hyperparameter Tuning on K-nearest Neighbors algorithm-
 ------------------------------------------------------
-image image
+![184524205-8c36d70e-d9c7-43cb-a5f6-8257d693d649](https://user-images.githubusercontent.com/95495685/185740276-33a5d260-21a3-4350-88d5-a0b5c96b552b.png)
+
+![184524211-0c3e3726-1a99-4a94-ae15-79e052929346](https://user-images.githubusercontent.com/95495685/185740282-d49c74a6-bd6d-44b0-9343-fe67e08e3a9e.png)
 
 ## ROC Curve:
 ------------------------------------------------------
-An ROC curve (receiver operating characteristic curve) is a graph showing the performance of a classification model at all classification thresholds. This curve plots two parameters: a) True Positive Rate-True Positive Rate (TPR) is a synonym for recall and is therefore defined as follows:TPR=TP / (TP+FN) b) False Positive Rate-False Positive Rate (FPR) is defined as follows:FPR =FP / (FP+TN) image
+An ROC curve (receiver operating characteristic curve) is a graph showing the performance of a classification model at all classification thresholds. This curve plots two parameters: a) True Positive Rate-True Positive Rate (TPR) is a synonym for recall and is therefore defined as follows:TPR=TP / (TP+FN) b) False Positive Rate-False Positive Rate (FPR) is defined as follows:FPR =FP / (FP+TN) 
+![184524235-9537fcc6-2a7f-49ff-a341-b8711cc52ab6](https://user-images.githubusercontent.com/95495685/185740306-d1e4c10a-d5f8-49a0-b46a-30fd2d472104.png)
+
 
 # METRICS USED
 ------------------------------------------------------------
 ● Classification Report:A classification report is a performance evaluation metric in machine learning. It is used to show the precision, recall, F1 Score, and support of your trained classification model.
 
-Accuracy: the proportion of total dataset instances that were correctly predicted out of the total instances accuracy=(true positives+true negatives)/total
+1. Accuracy: the proportion of total dataset instances that were correctly predicted out of the total instances accuracy=(true positives+true negatives)/total
 
-Recall (sensitivity): the proportion of the predicted positive dataset instances out of the actual positive instances sensitivity=true positives/(true positives+false negatives)
+2. Recall (sensitivity): the proportion of the predicted positive dataset instances out of the actual positive instances sensitivity=true positives/(true positives+false negatives)
 
-F1 score: a composite harmonic mean (average of reciprocals) that combines both precision and recall. For this, we first measure the precision, the ability of the model to identify only the relevant dataset instances precision=true positives/(true positives+false positives) The F1 score is estimated as F1=2×(precision×recall)/(precision+recall) ● Confusion Matrix:A Confusion matrix is an N x N matrix used for evaluating the performance of a classification model, where N is the number of target classes. The matrix compares the actual target values with those predicted by the machine learning model. This gives us a holistic view of how well our classification model is performing and what kinds of errors it is making.
+3. F1 score: a composite harmonic mean (average of reciprocals) that combines both precision and recall. For this, we first measure the precision, the ability of the model to identify only the relevant dataset instances precision=true positives/(true positives+false positives) The F1 score is estimated as F1=2×(precision×recall)/(precision+recall) ● Confusion Matrix:A Confusion matrix is an N x N matrix used for evaluating the performance of a classification model, where N is the number of target classes. The matrix compares the actual target values with those predicted by the machine learning model. This gives us a holistic view of how well our classification model is performing and what kinds of errors it is making.
 
 ● True Positive (TP) -The predicted value matches the actual value.The actual value was positive and the model predicted a positive value ● True Negative (TN) -The predicted value matches the actual value. The actual value was negative and the model predicted a negative value ● False Positive (FP) – Type 1 error :-The predicted value was falsely predicted.The actual value was negative but the model predicted a positive value ● False Negative (FN) – Type 2 error:-The predicted value was falsely predicted.The actual value was positive but the model predicted a negative value
 
